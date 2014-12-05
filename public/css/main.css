@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'journalregular';
+  src: url('/type/journal-webfont.eot');
+  src: url('/type/journal-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/type/journal-webfont.woff') format('woff'),
+  url('/type/journal-webfont.ttf') format('truetype'),
+  url('/type/journal-webfont.svg#journalregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body
+{
+  background-color: #000 !important;
+}
+
+
+
+.header-container
+{
+  background-color: #000;
+  height: 500px;
+  background-image: url('/images/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border: 1px solid #333;
+}
+
+.header-container div
+{
+  margin-top: 150px;
+}
+
+.header-container h1
+{
+  color: #fff;
+  font-family: Oswald;
+  font-weight: bold;
+  text-align: center;
+  font-size: 6em;
+  margin-bottom: 0px;
+}
+
+.header-container h2
+{
+  text-align: center;
+  color: #EE3524;
+  font-family: journalregular;
+  font-size: 5em;
+  margin-top: 0px;
+}
+
+.section-header
+{
+  height: 200px;
+  background-color: #292A2A;
+}
+
+.section-header h2
+{
+  color: #fff;
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin: 0px;
+  margin-top: 60px;
+}
+
+.section-header h3
+{
+  color: #fff;
+  font-family: Oswald;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 10px;
+}
