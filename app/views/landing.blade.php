@@ -34,7 +34,6 @@
       <div class="row section-header">
         <h2>Recent</h2>
         <h3>This is what's new</h3>
-
       </div>
 
     </div>

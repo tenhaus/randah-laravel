@@ -1,3 +1,3 @@
 $(document).init(function() {
-  console.log("hey, buddy");
+  $('.header-container').backstretch('/images/header.jpg');
 });

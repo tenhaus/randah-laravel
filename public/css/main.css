@@ -20,10 +20,10 @@ html, body
 {
   background-color: #000;
   height: 500px;
-  background-image: url('/images/header.jpg');
+  /*background-image: url('/images/header.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 100%;*/
   border: 1px solid #333;
 }
 
