@@ -22,6 +22,13 @@
   </head>
 
   <body>
+
+    <ul id="topnav">
+      <li><a href="#recent">recent</a></li>
+      <li>popular</li>
+      <li>you</li>
+    </ul>
+
     <div class="container-fluid">
 
       <div class="row header-container">
@@ -31,9 +38,19 @@
         </div>
       </div>
 
-      <div class="row section-header">
+      <div class="row section-header" name="recent">
         <h2>Recent</h2>
         <h3>This is what's new</h3>
+      </div>
+
+      <div class="row">
+        <div class="recent-images">
+          <div class="item"><img  src="/images/recent/a.jpg" /></div>
+          <div class="item w2"><img src="/images/recent/b.jpg" /></div>
+          <div class="item"><img src="/images/recent/c.jpg" /></div>
+          <div class="item"><img src="/images/recent/d.jpg" /></div>
+          <div class="item"><img src="/images/recent/e.jpg" /></div>
+        </div>
       </div>
 
     </div>

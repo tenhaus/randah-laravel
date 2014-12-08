@@ -14,7 +14,22 @@ html, body
   background-color: #000 !important;
 }
 
+#topnav
+{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: #fff;
+  list-style: none;
+  text-transform: uppercase;
+}
 
+#topnav li
+{
+  display: inline-block;
+  margin-left: 10px;
+  font-family: Oswald;
+}
 
 .header-container
 {
@@ -77,3 +92,7 @@ html, body
   text-align: center;
   margin-top: 10px;
 }
+
+
+.item { width: 25%; }
+.item.w2 { width: 50%; }
