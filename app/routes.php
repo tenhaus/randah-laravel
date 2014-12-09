@@ -15,3 +15,10 @@ Route::get('/', function()
 {
 	return View::make('landing');
 });
+
+// Route::get('/content', function()
+// {
+// 	return View::make('landing');
+// });
+
+Route::resource('content', 'ContentController');

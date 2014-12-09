@@ -1,5 +1,7 @@
 <?php
 
+
+
 class ContentController extends \BaseController {
 
 	/**
@@ -9,7 +11,7 @@ class ContentController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		// return Response::json($user);
 	}
 
 
