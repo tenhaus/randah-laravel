@@ -11,7 +11,7 @@ class ContentController extends \BaseController {
 	 */
 	public function index()
 	{
-		// return Response::json($user);
+		return Response::json(User::all());
 	}
 
 
