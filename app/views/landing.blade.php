@@ -11,7 +11,9 @@
 
     {{ HTML::script('bower/jquery/dist/jquery.min.js') }}
     {{ HTML::script('bower/jquery-backstretch/jquery.backstretch.min.js') }}
-    {{ HTML::script('bower/masonry/dist/masonry.pkgd.min.js') }}
+    <!-- {{ HTML::script('bower/masonry/dist/masonry.pkgd.min.js') }} -->
+    {{ HTML::script('bower/packery/dist/packery.pkgd.min.js') }}
+    {{ HTML::script('bower/imagesloaded/imagesloaded.pkgd.min.js') }}
 
     {{ HTML::script('js/main.js') }}
 
@@ -44,12 +46,17 @@
       </div>
 
       <div class="row">
-        <div class="recent-images">
-          <div class="item"><img  src="/images/recent/a.jpg" /></div>
-          <div class="item w2"><img src="/images/recent/b.jpg" /></div>
-          <div class="item"><img src="/images/recent/c.jpg" /></div>
-          <div class="item"><img src="/images/recent/d.jpg" /></div>
-          <div class="item"><img src="/images/recent/e.jpg" /></div>
+        <div id="recent-images" class="image-grid">
+        </div>
+      </div>
+
+      <div class="row section-header" name="popular">
+        <h2>Popular</h2>
+        <h3>This is what's getting the love</h3>
+      </div>
+
+      <div class="row">
+        <div id="popular-images" class="image-grid">
         </div>
       </div>
 

@@ -14,6 +14,11 @@ html, body
   background-color: #000 !important;
 }
 
+html
+{
+  overflow-y: scroll;
+}
+
 #topnav
 {
   position: absolute;
@@ -93,6 +98,8 @@ html, body
   margin-top: 10px;
 }
 
-
-.item { width: 25%; }
-.item.w2 { width: 50%; }
+.image-grid
+{
+  min-height: 100px;
+  background-color: #fff;
+}
