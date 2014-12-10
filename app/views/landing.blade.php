@@ -40,19 +40,19 @@
         </div>
       </div>
 
-      <div class="row section-header" name="recent">
-        <h2>Recent</h2>
-        <h3>This is what's new</h3>
-      </div>
-
-      @include('gridLayout1', ['userImages' => $userImages])
-
       <div class="row section-header" name="popular">
         <h2>Popular</h2>
         <h3>This is what's getting the love</h3>
+      </div>      
+
+      @include('gridLayout1', ['userImages' => $userImages])
+
+      <div class="row section-header" name="recent">
+        <h2>Recent</h2>
+        <h3>This is what's fresh</h3>
       </div>
 
-      @include('gridLayout1', ['userImages' => $userImages])      
+      @include('gridLayout1', ['userImages' => $userImages])
 
     </div>
   </body>
