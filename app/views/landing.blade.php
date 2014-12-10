@@ -6,6 +6,7 @@
     <title>The Randah Online Gallery</title>
 
     {{ HTML::style('bower/bootstrap/dist/css/bootstrap.min.css'); }}
+    {{ HTML::style('css/jquery-tilesgallery.css'); }}
     {{ HTML::style('css/main.css'); }}
 
 
@@ -13,6 +14,7 @@
     {{ HTML::script('bower/jquery-backstretch/jquery.backstretch.min.js') }}
     {{ HTML::script('bower/imagesloaded/imagesloaded.pkgd.min.js') }}
 
+    {{ HTML::script('js/jquery.tiles-gallery.js') }}
     {{ HTML::script('js/main.js') }}
 
     <style>
@@ -43,19 +45,14 @@
         <h3>This is what's new</h3>
       </div>
 
-
-        @include('gridLayout1', ['userImages' => $userImages])
-
+      @include('gridLayout1', ['userImages' => $userImages])
 
       <div class="row section-header" name="popular">
         <h2>Popular</h2>
         <h3>This is what's getting the love</h3>
       </div>
 
-      <div class="row">
-        <div id="popular-images" class="image-grid">
-        </div>
-      </div>
+      @include('gridLayout1', ['userImages' => $userImages])      
 
     </div>
   </body>
