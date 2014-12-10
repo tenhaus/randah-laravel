@@ -11,7 +11,8 @@ class ContentController extends \BaseController {
 	 */
 	public function index()
 	{
-		return Response::json(User::all());
+		$userImages = UserImage::all()->random(100);
+		return Response::json($userImages);
 	}
 
 

@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('landing');
-});
+Route::get('/', 'HomeController@showLanding');
+
+// Route::get('/', function()
+// {
+// 	return View::make('landing');
+// });
 
 // Route::get('/content', function()
 // {

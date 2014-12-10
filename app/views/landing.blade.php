@@ -11,8 +11,6 @@
 
     {{ HTML::script('bower/jquery/dist/jquery.min.js') }}
     {{ HTML::script('bower/jquery-backstretch/jquery.backstretch.min.js') }}
-    <!-- {{ HTML::script('bower/masonry/dist/masonry.pkgd.min.js') }} -->
-    {{ HTML::script('bower/packery/dist/packery.pkgd.min.js') }}
     {{ HTML::script('bower/imagesloaded/imagesloaded.pkgd.min.js') }}
 
     {{ HTML::script('js/main.js') }}
@@ -47,6 +45,9 @@
 
       <div class="row">
         <div id="recent-images" class="image-grid">
+          @foreach($userImages as $userImage)
+          <img src="{{ $userImage->url }}"/>
+          @endforeach
         </div>
       </div>
 

@@ -15,9 +15,10 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function showLanding()
 	{
-		return View::make('landing');
+		$userImages = UserImage::all()->random(20);
+		return View::make('landing')->with('userImages', $userImages);
 	}
 
 }
