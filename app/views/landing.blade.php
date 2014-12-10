@@ -43,13 +43,9 @@
         <h3>This is what's new</h3>
       </div>
 
-      <div class="row">
-        <div id="recent-images" class="image-grid">
-          @foreach($userImages as $userImage)
-          <img src="{{ $userImage->url }}"/>
-          @endforeach
-        </div>
-      </div>
+
+        @include('gridLayout1', ['userImages' => $userImages])
+
 
       <div class="row section-header" name="popular">
         <h2>Popular</h2>

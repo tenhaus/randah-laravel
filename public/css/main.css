@@ -103,3 +103,14 @@ html
   min-height: 100px;
   background-color: #fff;
 }
+
+.grid-image
+{
+  display: block;
+  margin: 0 auto;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}

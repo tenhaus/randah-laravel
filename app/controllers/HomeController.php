@@ -17,8 +17,15 @@ class HomeController extends BaseController {
 
 	public function showLanding()
 	{
+		$saneArray = [];
 		$userImages = UserImage::all()->random(20);
-		return View::make('landing')->with('userImages', $userImages);
+
+		foreach($userImages as $userImage)
+		{
+			array_push($saneArray, $userImage);
+		}
+
+		return View::make('landing')->with('userImages', $saneArray);
 	}
 
 }
