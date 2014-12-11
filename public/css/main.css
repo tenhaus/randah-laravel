@@ -106,11 +106,23 @@ html
 
 .grid-image
 {
-  display: block;
-  margin: 0 auto;
+  cursor: pointer;
 }
 
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
+}
+
+.caption
+{
+  padding: 10px;
+  font-family: Open Sans !important;
+  cursor: pointer;
+  overflow: auto;
+}
+
+.captionTitle
+{
+  font-size: 14px;
 }

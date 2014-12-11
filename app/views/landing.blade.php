@@ -37,13 +37,14 @@
         <div>
           <h1>The Randah</h1>
           <h2>Online Art Gallery</h2>
+          <!-- <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div> -->
         </div>
       </div>
 
       <div class="row section-header" name="popular">
         <h2>Popular</h2>
         <h3>This is what's getting the love</h3>
-      </div>      
+      </div>
 
       @include('gridLayout1', ['userImages' => $userImages])
 
@@ -55,6 +56,18 @@
       @include('gridLayout1', ['userImages' => $userImages])
 
     </div>
+
+    <!-- Facebook sharing -->
+    <!-- <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=747795255313486&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script> -->
+    <!-- End Facebook sharing -->
+
   </body>
 
 </html>
