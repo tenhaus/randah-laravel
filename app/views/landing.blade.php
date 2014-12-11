@@ -12,7 +12,6 @@
 
     {{ HTML::script('bower/jquery/dist/jquery.min.js') }}
     {{ HTML::script('bower/jquery-backstretch/jquery.backstretch.min.js') }}
-    {{ HTML::script('bower/imagesloaded/imagesloaded.pkgd.min.js') }}
 
     {{ HTML::script('js/jquery.tiles-gallery.js') }}
     {{ HTML::script('js/main.js') }}
@@ -24,12 +23,6 @@
   </head>
 
   <body>
-
-    <ul id="topnav">
-      <li><a href="#recent">recent</a></li>
-      <li>popular</li>
-      <li>you</li>
-    </ul>
 
     <div class="container-fluid">
 
@@ -48,7 +41,7 @@
 
       @include('gridLayout1', ['userImages' => $userImages])
 
-      <div class="row section-header" name="recent">
+      <div class="row section-header" id="recent" name="recent">
         <h2>Recent</h2>
         <h3>This is what's fresh</h3>
       </div>
@@ -56,6 +49,12 @@
       @include('gridLayout1', ['userImages' => $userImages])
 
     </div>
+
+    <ul id="topnav">
+      <li><a href="#recent">recent</a></li>
+      <li>popular</li>
+      <li>you</li>
+    </ul>
 
     <!-- Facebook sharing -->
     <!-- <div id="fb-root"></div>
