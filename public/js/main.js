@@ -4,8 +4,8 @@ $(document).ready(function() {
 
   $(".image-grid").tilesGallery({
     'height': 16000,
-    'captionAnimationDuration': 0.5,
-    'captionAnimationType': 'fade'
+    // 'captionAnimationDuration': 0.5,
+    // 'captionAnimationType': 'fade'
   });
 
 });
